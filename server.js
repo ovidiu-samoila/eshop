@@ -29,10 +29,10 @@ conn.once('open', function() {
     // Wait for the database connection to establish, then start the app.
 
 
-    var Category     = require('./app/models/category');
-    var Client     = require('./app/models/client');
-    var Order     = require('./app/models/order');
-    var Product     = require('./app/models/product');
+    var Category     = require('./models/category');
+    var Client     = require('./models/client');
+    var Order     = require('./models/order');
+    var Product     = require('./models/product');
 
     var port = process.env.PORT || 8080;        // set our port
 

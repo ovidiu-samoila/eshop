@@ -3,9 +3,9 @@ var mongoose     = require('mongoose');
 var Schema       = mongoose.Schema;
 
 var CategorySchema   = new Schema({
-    namecat: String,
+    Name: String,
     description: String,
-    products: [{type: Schema.Types.ObjectId, ref: 'Product'}]
+    products : [{ type: Schema.ObjectId, ref: 'Product' }]
 });
 
-  var Product =  module.exports = mongoose.model('Category', CategorySchema);
+  module.exports = mongoose.model('Category', CategorySchema);
